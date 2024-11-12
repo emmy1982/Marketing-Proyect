@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: rgb(255, 94, 0);
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+
+}
+
+strong {
+    color: rgb(255, 94, 0);
+}
+
+.container-fluid {
+    top: 0;
+    width: 100%;
+    z-index: 10;
+
+}
+
+.navar-position {
+    z-index: 11;
+}
+
+.carousel-position {
+    position: relative;
+    margin-top: -100px;
+
+}
+
+.carouselImg {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    object-fit: cover;
+    filter: brightness(40%);
+}
+
+.carousel-caption-left {
+    left: 0 !important;
+    right: auto;
+    text-align: left !important;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    max-width: 400px;
+}
+
+.card-hero {
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+.card-hero:hover {
+    transform: scale(1.1);
+}
+
+.btn {
+    padding: 12px !important;
+    font-weight: bold !important;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+span {
+    font-weight: 800;
+}
+
+.h5-img {
+    font-size: 3rem;
+    color: white !important;
+}
+
+.cards-image-hero {
+    height: 300px;
+    object-fit: cover;
+    filter: brightness(40%);
+    transition: 0.5s;
+}
+
+.cards-image-hero:hover {
+    filter: brightness(20%) !important;
+}
+
+h5 {
+    color: var(--primary-color) !important;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+
+.icon-we {
+    width: 100px;
+}
+
+.container-we {
+    margin-top: -250px;
+}
+
+.h2-we {
+    padding-top: 350px;
+    margin-bottom: 60px;
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.btn-hover:hover {
+    /* background-color: rgb(79, 114, 255) !important; */
+
+    border: 1px black solid !important;
+}
+
+.img-consul {
+    height: 300px;
+    object-fit: cover;
+    filter: brightness(40%);
+
+}
+
+.btn-consul {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    border: none !important;
+    padding: 10px 20px !important;
+    font-weight: bold !important;
+    margin-left: 320px !important;
+}
+
+.company {
+    margin: 100px auto !important;
+}
+
+.icon-company {
+    width: 25px;
+}
+
+.img-company {
+    height: 80vh;
+    object-fit: cover;
+    filter: brightness(30%);
+}
+
+.card-img-testimonials {
+    margin-left: 112px;
+    margin-bottom: 30px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10%;
+    /* Hace que las imágenes sean redondas */
+    width: 100px;
+    /* Ajusta el tamaño según sea necesario */
+    height: 100px;
+    /* Asegúrate de que la altura y el ancho sean iguales */
+    object-fit: cover;
+    box-shadow: 1px 1px 15px 4px rgba(61, 61, 61, 0.694);
+}
+
+.card-post {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.card-post:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    width: 100% !important;
+}
+
+@media (max-width: 576px) {
+
+    .carousel-caption-left {
+        font-size: 0.9rem;
+        margin-left: 10px;
+        max-width: 100%;
+    }
+
+    .carouselImg {
+        height: 60vh;
+    }
+
+    .cards-1 {
+        margin-top: 20px;
+    }
+
+    .cards-image-hero {
+        width: 100% !important;
+        border: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        gap: 0 !important;
+        box-shadow: 1px 1px 5px 4px rgba(61, 61, 61, 0.47);
+    }
+
+    .h5-img {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    .company {
+        height: 100vh;
+
+    }
+
+    .size-img-company {
+        height: 130vh !important;
+    }
+
+    .img-company {
+        height: 100vh;
+        width: 100%;
+    }
+
+    .navbar-brand,
+    .card-text,
+    h5,
+    h2 {
+        font-size: 1rem;
+    }
+
+    .icon-we,
+    .icon-company {
+        width: 80px;
+        margin: 40px auto;
+    }
+
+    .img-consul,
+    .img-company {
+        height: auto;
+        width: 100%;
+    }
+
+    .card-img-testimonials {
+        margin: 0 auto;
+        width: 80px;
+        height: 80px;
+    }
+
+    .video {
+        margin-top: 80px;
+    }
+
+    .icons {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card-img-testimonials {
+        margin-bottom: 30px;
+    }
+
+    .testimonial-margin {
+        margin-top: 200px !important;
+    }
+
+    .btn-consul {
+        margin-left: 0px !important;
+    }
+}
